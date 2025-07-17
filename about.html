@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Our Works</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .container {
+            display: flex;
+            width: 820px;
+            height: 340px;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 70px;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: flex 0.5s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container:hover .card {
+            flex: 0.8;
+        }
+
+        .container .card:hover {
+            flex: 5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <h1>Explore Our Creations</h1>
+        <p>Showcasing a selection of projects that exemplify our expertise and dedication to excellence.</p>
+    </div>
+
+
+    <!-- Image Cards Section -->
+    <div class="container">
+        <div class="card">
+            <img src="./assets/1.jpg" alt="img1">
+        </div>
+        <div class="card">
+            <img src="./assets/2.jpg.jpg" alt="img2">
+        </div>
+        <div class="card">
+            <img src="./assets/3.jpg.jpg" alt="img3">
+        </div>
+        <div class="card">
+            <img src="./assets/6.jpg" alt="img4">
+        </div>
+        <div class="card">
+            <img src="./assets/7.jpg" alt="img5">
+        </div>
+        <div class="card">
+            <img src="./assets/4.jpg" alt="img6">
+        </div>
+    </div>
+
+</body>
+
+</html>
